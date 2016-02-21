@@ -7,6 +7,8 @@
 
 body {
   background: url(https://i.ytimg.com/vi/iXA-St5VB5U/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header img {
@@ -146,8 +148,12 @@ nav {
   margin-right: auto;
 }
 
-header img {
+header {
   width: 33%;
+}
+
+header img {
+  width: 100%;
   float: left;
   position: relative;
   top: -40px;
@@ -157,30 +163,34 @@ header img {
 aside,
 footer {
   position: relative;
+  width: 100%;
   top: -40px;
 }
 
+.leftcol {
+  float: left;
+}
+
 #aboutme {
-  width: 33%;
   clear: left;
 }
 
 aside {
   width: 33%;
-  clear: left;
+/*   clear: left; */
 }
 
 footer {
   width: 33%;
   margin: 15px 0;
-  clear: left;
+/*   clear: left; */
 }
 
 article {
   width: 63%;
   float: right;
   position: relative;
-  top: -755px;
+  top: -40px;
 }
 
 
@@ -190,19 +200,8 @@ article {
 /* Tablet Query */
 
 @media screen and (max-width: 1200px) {
-  nav #name {
-    display: none;
-  }
-  nav {
-    position: ;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 60px;
-    background: black;
-    opacity: .95;
-  }
+
+
   #logo {
     position: absolute;
     left: 0;
@@ -211,6 +210,7 @@ article {
     margin-left: auto;
     margin-right: 0;
   }
+  
   #navright {
     display: block;
     float: right;
@@ -221,20 +221,20 @@ article {
   }
   
   header {
-    width: 400px;
-    margin: 0 auto;
+    width: 100%;
   }
-  header img {
+  
+  
+ header #heroimg {
     position: static;
-    width: 400px;
-    
+    width: 400px; 
+    margin: 0 auto;
   }
   
   #aboutme {
     position: relative;
-    width: 420px;
-    top: 0px;
-    right: 10px;
+    width: 400px;
+    margin: 0 auto;
   }
   
   aside,
@@ -245,11 +245,10 @@ article {
     float: left;
     clear: left;
   }
-  #aboutme h2,
+  
   #heroimg,
   aside h2,
   article h2,
-  #aboutme p,
   article div,
   aside p,
   footer p {
@@ -269,13 +268,13 @@ article {
       top: -40px;
     }
     
-    header {
-      width: 98%;
-      margin: 0 1%;
+    header #heroimg {
+      width: 100%;
+      margin: 0 auto;
     }
     
     header img {
-      margin: 10px 2% 0 2%;
+      margin: 50px 2% 0 2%;
       width: 96%;
     
     }
