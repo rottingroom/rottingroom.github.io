@@ -226,7 +226,7 @@ article {
   }
   
   
- header #heroimg {
+  header #heroimg {
     position: static;
     width: 400px; 
     margin: 0 auto;
@@ -249,48 +249,53 @@ article {
   
   #heroimg,
   aside h2,
-  article h2,
+/*   article h2, */
   article div,
   aside p,
   footer p {
     margin: 10px;
   }
+  
+  article h2 {
+    margin: 20px 10px 10px 10px;
+  }
+  
 }
   
 /*   Mobile Query */
 
-  @media screen and (max-width: 550px) {
-    
-    header,
-    article,
-    aside
-    footer {
-      position: relative;
-      top: -40px;
-    }
-    
-    header #heroimg {
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    header img {
-      margin: 50px 2% 0 2%;
-      width: 96%;
-    
-    }
-    
-    #aboutme {
-      width: 96%;
-      margin: 0 auto;
-      left: 0;
-    }
-  
-    #aboutme p{
-      margin: 0;
-    }
-    
+@media screen and (max-width: 550px) {
 
-    
+  header,
+  article,
+  aside,
+  footer {
+    position: relative;
+    top: -40px;
   }
+
+  header #heroimg {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header img {
+    margin: 50px 2% 0 2%;
+    width: 96%;
+
+  }
+
+  #aboutme {
+    width: 96%;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  #aboutme p{
+    margin: 0;
+  }
+
+
+
+}
 
