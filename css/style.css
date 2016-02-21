@@ -255,28 +255,11 @@ article {
   footer p {
     margin: 10px;
   }
+}
   
 /*   Mobile Query */
 
   @media screen and (max-width: 550px) {
-    
-    header {
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    header img {
-      position: relative;
-      top: 0px;
-      left: 10px;
-      width: 96%;
-    
-    }
-  
-    #aboutme {
-      position: static;
-      width: 100%;
-    }
     
     header,
     article,
@@ -285,6 +268,29 @@ article {
       position: relative;
       top: -40px;
     }
+    
+    header {
+      width: 98%;
+      margin: 0 1%;
+    }
+    
+    header img {
+      margin: 10px 2% 0 2%;
+      width: 96%;
+    
+    }
+    
+    #aboutme {
+      width: 96%;
+      margin: 0 auto;
+      left: 0;
+    }
+  
+    #aboutme p{
+      margin: 0;
+    }
+    
+
     
   }
 
