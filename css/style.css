@@ -1,16 +1,290 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
 /* Main Stylesheet */
 
+
 /* Global */
+
 body {
-  background: #FEB;
-  max-width: 40em;
-  margin: auto;
+  background: url(https://i.ytimg.com/vi/iXA-St5VB5U/maxresdefault.jpg);
 }
 
-img{
-  width: 50%;
+header img {
+  background: #000;
+  margin: 15px 0 0 0;
+  border-radius: 8px 8px 0 0;
 }
+
+header p {
+  background: #fff;
+  opacity: 0.8;
+  padding: 10px 30px;
+  border-radius: 0 0 8px 8px;
+}
+
+aside p,
+footer p {
+  background: #fff;
+  opacity: 0.8;
+  padding: 10px 30px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+article div {
+  background: #fff;
+  opacity: 0.8;
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+
+/* Navigation */
+
+nav a:link,
+nav a:visited {
+  font-weight: 600;
+  color: #A65B4B;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: 500;
+  background: #A65B4B;
+  color: white;
+  transition: background .5s;
+}
+
+#navright a:hover {
+  background: none;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  color: #999;
+  font-weight: 600;
+  list-style-type: none;
+  line-height: 29px;
+  display: inline;
+  margin: 0 10px;
+}
+
+nav img {
+  height: 2em;
+}
+
+
+/* Paragraphs and Headings */
+
+p {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+  color: #A65B4B;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
 
 /* Typography */
-/* Homepage */
-/* Resume */
+
+body {
+  color: #000;
+  line-height: 1.5em;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+}
+
+aside,
+footer {
+  color: #000;
+}
+
+
+/* Layout */
+
+main {
+  max-width: 80em;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background: black;
+  opacity: .95;
+}
+
+#navright {
+  float: right;
+}
+
+#logo {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header img {
+  width: 33%;
+  float: left;
+  position: relative;
+  top: -40px;
+}
+
+#aboutme,
+aside,
+footer {
+  position: relative;
+  top: -40px;
+}
+
+#aboutme {
+  width: 33%;
+  clear: left;
+}
+
+aside {
+  width: 33%;
+  clear: left;
+}
+
+footer {
+  width: 33%;
+  margin: 15px 0;
+  clear: left;
+}
+
+article {
+  width: 63%;
+  float: right;
+  position: relative;
+  top: -755px;
+}
+
+
+/* Media Queries */
+
+
+/* Tablet Query */
+
+@media screen and (max-width: 1200px) {
+  nav #name {
+    display: none;
+  }
+  nav {
+    position: ;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    background: black;
+    opacity: .95;
+  }
+  #logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  #navright {
+    display: block;
+    float: right;
+    width: 20px;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+  }
+  
+  header {
+    width: 400px;
+    margin: 0 auto;
+  }
+  header img {
+    position: static;
+    width: 400px;
+    
+  }
+  
+  #aboutme {
+    position: relative;
+    width: 420px;
+    top: 0px;
+    right: 10px;
+  }
+  
+  aside,
+  article,
+  footer {
+    position: static;
+    width: 100%;
+    float: left;
+    clear: left;
+  }
+  #aboutme h2,
+  #heroimg,
+  aside h2,
+  article h2,
+  #aboutme p,
+  article div,
+  aside p,
+  footer p {
+    margin: 10px;
+  }
+  
+/*   Mobile Query */
+
+  @media screen and (max-width: 550px) {
+    
+    header {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    header img {
+      position: relative;
+      top: 0px;
+      left: 10px;
+      width: 96%;
+    
+    }
+  
+    #aboutme {
+      position: static;
+      width: 100%;
+    }
+    
+    header,
+    article,
+    aside
+    footer {
+      position: relative;
+      top: -40px;
+    }
+    
+  }
+

@@ -1,3 +1,0 @@
-# A. Raffini
-<img src="" />
-
