@@ -46,6 +46,7 @@ nav a:link,
 nav a:visited {
   font-weight: 600;
   color: #A65B4B;
+  padding: 21px 5px;
   text-decoration: none;
 }
 
