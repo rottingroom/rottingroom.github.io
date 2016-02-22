@@ -40,6 +40,36 @@ article div {
   border-radius: 8px;
 }
 
+.rss-items {
+  color: inherit;
+  background: white;
+  opacity: 0.8;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.rss-item {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0 0 20px 0;
+}
+
+.rss-item a:link,
+.rss-item a:visited {
+  color: #A65B4B;
+  font-size: 1.75em;  
+  font-weight: ;
+}
+
+.rss-date {
+  display: block;
+  margin: 10px 0 0 0;
+  font-size: 0.9em;
+}
+
+
+
+
 /* Navigation */
 
 nav a:link,
@@ -187,6 +217,15 @@ footer {
 /*   clear: left; */
 }
 
+.blog {
+  width: 63%;
+  float: right;
+  position: relative;
+  top: -40px;
+}
+
+
+
 article {
   width: 63%;
   float: right;
@@ -256,6 +295,21 @@ article {
     margin: 10px;
   }
   
+  .blog {
+  display: block;
+  width: 100%;
+
+  float: left;
+  }
+  
+  .blog h2 {
+    margin: 10px;
+  }
+  
+  .rss-items{
+  margin: 0 10px;
+  }
+  
   article h2 {
     margin: 20px 10px 10px 10px;
   }
@@ -272,6 +326,10 @@ article {
   footer {
     position: relative;
     top: -40px;
+  }
+  
+  nav #name {
+    display:none;
   }
 
   header #heroimg {
