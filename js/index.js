@@ -1,7 +1,7 @@
-$(document).ready( function() { 
-
-        // Scroll to anchor
-        $('html,body').animate({scrollTop: $($(this).attr('href')).offset().top - 100},'slow');
-        e.preventDefault();
-        return false;
+var $root = $('html, body');
+$('a').click(function() {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 90
+    }, 500);
+    return false;
 });
