@@ -23,12 +23,11 @@ header p {
   border-radius: 0 0 8px 8px;
 }
 
-aside p,
 footer p {
-  background: #fff;
+  background: #000;
   padding: 10px 30px;
   margin: 15px 0;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
 }
 
 article div {
@@ -54,7 +53,7 @@ article div {
 .rss-item a:visited {
   color: #A65B4B;
   font-size: 1.75em;  
-  font-weight: ;
+  font-weight: bold;
 }
 
 .rss-date {
@@ -63,8 +62,23 @@ article div {
   font-size: 0.9em;
 }
 
+article h2 {
+  margin: 20px 10px 10px 0;
+}
 
+aside h2 {
+  margin: 20px 10px 10px 10px;
+}
 
+article div {
+  margin: 20px 0 30px 0;
+}
+
+article li {
+  list-style-type: none;
+  position: relative;
+  left: -20px;
+}
 
 
 /* Navigation */
@@ -137,7 +151,7 @@ body {
 
 aside,
 footer {
-  color: #000;
+  color: #fff;
 }
 
 
@@ -176,10 +190,10 @@ nav {
   margin-right: auto;
 }
 
-
 header {
   width: 33%;
 }
+
 
 header img {
   width: 100%;
@@ -192,23 +206,39 @@ header img {
   position: relative;
   width: 100%;
   top: -40px;
+  clear: left;
 }
+
 
 header {
   float: left;
 }
 
-#aboutme {
-  clear: left;
-}
-
 aside {
   width: 33%;
+  clear:left;
+}
+
+
+
+aside div {
+  width: 96%;
+  margin: 0 0 2% 0;
+  background: #000;
+  padding: 2%;
+  border-radius: 8px 8px 0 0;
+}
+
+aside img {
+  width: 94%;
+  margin: 10px 3%;
 }
 
 footer {
   width: 33%;
   margin: 15px 0;
+  position: relative;
+  top: -20px;
 }
 
 .blog {
@@ -280,6 +310,16 @@ article {
     clear: left;
   }
   
+  aside div {
+    width: 93.7%;
+    margin: 40px 10px 0 10px;
+  }
+  
+  footer p {
+    position: relative;
+    top: -40px;
+  }
+  
   #heroimg,
   aside h2,
   article div,
@@ -304,7 +344,11 @@ article {
   }
   
   article h2 {
-    margin: 20px 10px 10px 10px;
+    margin: 20px 10px 10px 0;
+  }
+  
+  article div {
+    margin: 40px 10px 0 10px;
   }
   
 }
@@ -349,4 +393,5 @@ article {
 
 
 }
+
 
