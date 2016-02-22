@@ -310,20 +310,27 @@ article {
     clear: left;
   }
   
-  aside div {
-    width: 93.7%;
-    margin: 40px 10px 0 10px;
+
+  
+  
+  aside div{
+    position: relative;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
   }
   
   footer p {
     position: relative;
-    top: -40px;
+    top: -45px;
   }
   
   #heroimg,
   aside h2,
   article div,
-  aside p,
   footer p {
     margin: 10px;
   }
@@ -331,7 +338,6 @@ article {
   .blog {
   display: block;
   width: 100%;
-
   float: left;
   }
   
@@ -389,6 +395,9 @@ article {
   #aboutme p{
     margin: 0;
   }
+  
+
+
 
 
 
