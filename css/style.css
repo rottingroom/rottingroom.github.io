@@ -53,8 +53,7 @@ nav img {
 /* Header */
 
 header img {
-  background: black;
-  margin: 15px 0 0 0;
+  margin-top: 15px;
   border-radius: 8px 8px 0 0;
 }
 
@@ -76,7 +75,7 @@ header p {
 .rss-item {
   list-style-type: none;
   text-decoration: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 60px 0;
 }
 
 .rss-item a:link,
@@ -88,7 +87,7 @@ header p {
 
 .rss-date {
   display: block;
-  margin: 10px 0 0 0;
+  margin-top: 10px;
   font-size: 0.9em;
 }
 
@@ -152,7 +151,7 @@ h1 {font-size: 2em;}
 h2 {font-size: 1.75em; color: #A65B4B;}
 h3 {font-size: 1.5em;}
 
-/* Layout */
+/* ----------------------------Layout----------------------------- */
 
 main {
   max-width: 80em;
@@ -161,7 +160,7 @@ main {
   top: 100px;
 }
 
-/* ----------------------------Desktop----------------------------- */
+/* Layout Navigation */
 
 nav {
   position: fixed;
@@ -218,7 +217,7 @@ aside {
 
 aside div {
   width: 96%;
-  margin: 0 0 2% 0; 
+  margin-bottom: 2%; 
   padding: 2%;
   border-radius: 8px 8px 0 0;
 }
@@ -229,6 +228,7 @@ aside img {
 }
 
 /* Layout Blog */
+
 section {
   width: 63%;
   float: right;
@@ -295,42 +295,6 @@ footer {
     margin: 0 auto;
   }
   
-  /* Tablet Resume */
-  
-  article {
-    width: 100%;
-  }
-  
-  article h2 {
-    margin: 20px 10px 10px 0;
-  }
-  
-  article div {
-    margin: 10px;
-    margin: 40px 10px 0 10px;
-  }
-  
-  /* Tablet Portfolio   */
-  
-  aside{
-    position: static;
-    width: 100%;
-    float: left;
-    clear: left;
-  }
-  
-  aside div{
-    position: relative;
-    width: auto;
-    margin-top: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-   aside h2 {
-    margin: 10px;
-  }
-  
   /* Tablet Blog   */
   
   section {
@@ -344,17 +308,44 @@ footer {
   }
   
   .rss-items{
-  margin: 0 10px;
+    margin: 0 10px;
+  }
+  
+  /* Tablet Resume */
+  
+  article {
+    width: 100%;
+  }
+  
+  article h2 {
+    margin: 20px 10px 10px 0;
+  }
+  
+  article div {
+    margin: 40px 10px 0 10px;
+  }
+  
+  /* Tablet Portfolio   */
+  
+  aside{
+    width: 100%;
+    float: left;
+  }
+  
+  aside div{
+    width: auto;
+    margin: 40px 10px 0 10px;
+  }
+  
+   aside h2 {
+    margin: 10px;
   }
   
   /* Tablet Footer */
   
   footer {
     width: 100%;
-    float: left;
     clear: left;
-    position: relative;
-    top: -45px;
   }
   
   footer p {
@@ -382,10 +373,6 @@ footer {
   }
   
 /* Mobile Header */
-  
-  header {
-    
-  }
 
   header #heroimg {
     width: 100%;
@@ -393,9 +380,8 @@ footer {
   }
 
   header img {
-    margin: 50px 2% 0 2%;
     width: 96%;
-
+    margin: 50px 2% 0 2%;
   }
 
   #aboutme {
@@ -406,10 +392,6 @@ footer {
 
   #aboutme p{
     margin: 0;
-  }
-  
-  footer p {
-    margin-top: -40px;
   }
   
 
