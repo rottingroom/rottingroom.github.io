@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
-/* Main Stylesheet */
-
-
-/* Global */
+/* ----------------------------Global----------------------------- */
 
 body {
   background: url(https://i.ytimg.com/vi/iXA-St5VB5U/maxresdefault.jpg);
@@ -11,77 +8,11 @@ body {
   background-attachment: fixed;
 }
 
-header img {
-  background: #000;
-  margin: 15px 0 0 0;
-  border-radius: 8px 8px 0 0;
-}
-
-header p {
-  background: #fff;
-  padding: 10px 30px;
-  border-radius: 0 0 8px 8px;
-}
-
-footer p {
-  background: #000;
-  padding: 10px 30px;
-  margin: 15px 0;
-  border-radius: 0 0 8px 8px;
-}
-
-article div {
-  background: #fff;
-  padding: 10px 30px;
-  border-radius: 8px;
-}
-
-.rss-items {
-  color: black;
-  background: white;
-  border-radius: 8px;
-  padding: 30px;
-}
-
-.rss-item {
-  list-style-type: none;
-  text-decoration: none;
-  margin: 0 0 20px 0;
-}
-
-.rss-item a:link,
-.rss-item a:visited {
-  color: #A65B4B;
-  font-size: 1.75em;  
-  font-weight: bold;
-}
-
-.rss-date {
-  display: block;
-  margin: 10px 0 0 0;
-  font-size: 0.9em;
-}
-
-article h2 {
-  margin: 20px 10px 10px 0;
-}
-
-aside h2 {
-  margin: 20px 10px 10px 10px;
-}
-
-article div {
-  margin: 20px 0 30px 0;
-}
-
-article li {
-  list-style-type: none;
-  position: relative;
-  left: -20px;
-}
-
-
 /* Navigation */
+
+nav {
+  background: black;
+}
 
 nav a:link,
 nav a:visited {
@@ -119,28 +50,95 @@ nav img {
   height: 2em;
 }
 
+/* Header */
 
-/* Paragraphs and Headings */
-
-p {
-  font-size: 1em;
+header img {
+  background: black;
+  margin: 15px 0 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
-h1 {
-  font-size: 2em;
+header p {
+  background: white;
+  padding: 10px 30px;
+  border-radius: 0 0 8px 8px;
 }
 
-h2 {
-  font-size: 1.75em;
+/* Blog */
+
+.rss-items {
+  color: black;
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.rss-item {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0 0 20px 0;
+}
+
+.rss-item a:link,
+.rss-item a:visited {
   color: #A65B4B;
+  font-size: 1.75em;  
+  font-weight: bold;
 }
 
-h3 {
-  font-size: 1.5em;
+.rss-date {
+  display: block;
+  margin: 10px 0 0 0;
+  font-size: 0.9em;
 }
 
+/* Portfolio */
 
-/* Typography */
+aside {
+  color: white;
+}
+
+aside div {
+  background: black;
+}
+
+aside h2 {
+  margin: 20px 10px 10px 10px;
+}
+
+/* Resume */
+
+article h2 {
+  margin: 20px 10px 10px 0;
+}
+
+article div {
+  background: white;
+  padding: 10px 30px;
+  border-radius: 8px;
+  margin: 20px 0 30px 0;
+}
+
+article li {
+  list-style-type: none;
+  position: relative;
+  left: -20px;
+}
+
+/* Footer */
+
+footer {
+  color: white;
+}
+
+footer p {
+  background: black;
+  padding: 10px 30px;
+  margin: 15px 0;
+  border-radius: 0 0 8px 8px;
+}
+
+/* ----------------------------Typography----------------------------- */
 
 body {
   color: #000;
@@ -149,11 +147,10 @@ body {
   font-size: 15px;
 }
 
-aside,
-footer {
-  color: #fff;
-}
-
+p  {font-size: 1em;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.75em; color: #A65B4B;}
+h3 {font-size: 1.5em;}
 
 /* Layout */
 
@@ -164,6 +161,8 @@ main {
   top: 100px;
 }
 
+/* ----------------------------Desktop----------------------------- */
+
 nav {
   position: fixed;
   top: 0;
@@ -171,7 +170,6 @@ nav {
   z-index: 9999;
   width: 100%;
   height: 60px;
-  background: black;
   opacity: .95;
 }
 
@@ -190,10 +188,12 @@ nav {
   margin-right: auto;
 }
 
+/* Layout Header */
+
 header {
   width: 33%;
+  float: left;
 }
-
 
 header img {
   width: 100%;
@@ -209,22 +209,16 @@ header img {
   clear: left;
 }
 
-
-header {
-  float: left;
-}
+/* Layout Portfolio */
 
 aside {
   width: 33%;
   clear:left;
 }
 
-
-
 aside div {
   width: 96%;
-  margin: 0 0 2% 0;
-  background: #000;
+  margin: 0 0 2% 0; 
   padding: 2%;
   border-radius: 8px 8px 0 0;
 }
@@ -234,21 +228,13 @@ aside img {
   margin: 10px 3%;
 }
 
-footer {
-  width: 33%;
-  margin: 15px 0;
-  position: relative;
-  top: -20px;
-}
-
-.blog {
+/* Layout Blog */
+section {
   width: 63%;
   float: right;
   position: relative;
   top: -40px;
 }
-
-
 
 article {
   width: 63%;
@@ -257,15 +243,22 @@ article {
   top: -40px;
 }
 
+/* Layout Resume */
 
-/* Media Queries */
+footer {
+  width: 33%;
+  margin: 15px 0;
+  position: relative;
+  top: -20px;
+}
 
+/* ----------------------------Tablet----------------------------- */
 
-/* Tablet Query */
 
 @media screen and (max-width: 1200px) {
 
-
+  /* Tablet Navigation */
+  
   #logo {
     position: absolute;
     left: 0;
@@ -283,11 +276,12 @@ article {
     right: 30px;
     top: 80px;
   }
+
+  /* Tablet Header   */
   
   header {
     width: 100%;
   }
-  
   
   header #heroimg {
     position: static;
@@ -301,52 +295,10 @@ article {
     margin: 0 auto;
   }
   
-  aside,
-  article,
-  footer {
-    position: static;
+  /* Tablet Resume */
+  
+  article {
     width: 100%;
-    float: left;
-    clear: left;
-  }
-  
-
-  
-  
-  aside div{
-    position: relative;
-    width: auto;
-    margin-top: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-
-  }
-  
-  footer p {
-    position: relative;
-    top: -45px;
-  }
-  
-  #heroimg,
-  aside h2,
-  article div,
-  footer p {
-    margin: 10px;
-  }
-  
-  .blog {
-  display: block;
-  width: 100%;
-  float: left;
-  }
-  
-  .blog h2 {
-    margin: 10px;
-  }
-  
-  .rss-items{
-  margin: 0 10px;
   }
   
   article h2 {
@@ -354,12 +306,64 @@ article {
   }
   
   article div {
+    margin: 10px;
     margin: 40px 10px 0 10px;
+  }
+  
+  /* Tablet Portfolio   */
+  
+  aside{
+    position: static;
+    width: 100%;
+    float: left;
+    clear: left;
+  }
+  
+  aside div{
+    position: relative;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+   aside h2 {
+    margin: 10px;
+  }
+  
+  /* Tablet Blog   */
+  
+  section {
+  display: block;
+  width: 100%;
+  float: left;
+  }
+  
+  section h2 {
+    margin: 10px;
+  }
+  
+  .rss-items{
+  margin: 0 10px;
+  }
+  
+  /* Tablet Footer */
+  
+  footer {
+    width: 100%;
+    float: left;
+    clear: left;
+    position: relative;
+    top: -45px;
+  }
+  
+  footer p {
+    margin: 10px;
   }
   
 }
   
-/*   Mobile Query */
+/* ----------------------------Mobile----------------------------- */
 
 @media screen and (max-width: 550px) {
 
@@ -371,8 +375,16 @@ article {
     top: -40px;
   }
   
+/* Mobile Navigation */
+  
   nav #name {
     display:none;
+  }
+  
+/* Mobile Header */
+  
+  header {
+    
   }
 
   header #heroimg {
@@ -396,10 +408,10 @@ article {
     margin: 0;
   }
   
-
-
-
-
+  footer p {
+    margin-top: -40px;
+  }
+  
 
 }
 
