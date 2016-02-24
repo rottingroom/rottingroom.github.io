@@ -115,17 +115,19 @@ aside h2 {
 
 .lightbox {
     /** Default lightbox to hidden */
-    display: none;
+/*     display: none; */
     
     /** Position and style */
     position: fixed;
     z-index: 9999;
     width: 101%;
-    height: 101%;
+    height: 0;
     text-align: center;
-    top: 0;
+    top: -1000;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.9);
+    transition: top .4s;
+    transition: height .4s;
 }
 
 .lightbox figure img {
@@ -146,8 +148,10 @@ aside h2 {
     /** Remove default browser outline */
     outline: none;
     /** Unhide lightbox **/
-    display: block;
-/*     background: rgba(0,0,0,0.8); */
+    top: 0;
+    height: 100%;
+
+
 }
 
 /* Resume */
@@ -243,6 +247,47 @@ form a:focus {
     transition: background .5s;
     outline: #F6E9E7;
     color: #000;
+}
+
+/* Lightbox Form */
+
+.lightboxform {
+    /** Default lightbox to hidden */
+    display: none;
+    
+    /** Position and style */
+    position: fixed;
+    z-index: 9999;
+    width: 101%;
+    height: 101%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    transition: height .5s;
+}
+
+.lightboxform figure img {
+    max-width: 100%;
+    max-height: 95%;
+    margin-top: 2%;
+}
+
+.lightboxform figure{
+    width: 90%;
+    height: 90%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.lightboxform:target {
+    /** Remove default browser outline */
+    outline: none;
+    /** Unhide lightbox **/
+    display: block;
+  
+
 }
 
 /* ----------------------------Typography----------------------------- */
@@ -555,4 +600,6 @@ footer {
   
 
 }
+
+
 
