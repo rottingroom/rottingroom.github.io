@@ -35,14 +35,13 @@
 
   <body>
 
-    <!-- Included from http://codepen.io/rottingroom/pen/QyaJVd -->     <!-- Included from http://codepen.io/rottingroom/pen/rxpQQd -->     <!-- Included from http://codepen.io/rottingroom/pen/adEQRj -->     <!-- Included from http://codepen.io/rottingroom/pen/adgwxZ -->     <!-- Included from http://codepen.io/rottingroom/pen/ZQvmxX -->     <!-- Included from http://codepen.io/rottingroom/pen/dGJQzQ -->     <script src="js/index.js"></script>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Included from http://codepen.io/rottingroom/pen/dGxzGR -->     <!-- Included from http://codepen.io/rottingroom/pen/QyaJVd -->     <!-- Included from http://codepen.io/rottingroom/pen/rxpQQd -->     <!-- Included from http://codepen.io/rottingroom/pen/adEQRj -->     <!-- Included from http://codepen.io/rottingroom/pen/adgwxZ -->     <!-- Included from http://codepen.io/rottingroom/pen/ZQvmxX -->     <!-- Included from http://codepen.io/rottingroom/pen/dGJQzQ -->     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <main>
   
   <!-- navbar -->
   <nav>
-    <ul>
+      <ul>
   <li id="name">Anthony Raffini</li>
   <li><a href="#Blogger" class="smoothscroll">Blog</a></li>
   <li><a href="#Experience" class="smoothscroll">Experience</a></li>
@@ -55,7 +54,7 @@
       <a target="_blank" href="https://www.facebook.com/anthony.raffini"><img src="http://rottingroom.github.io/img/icons/facebook.png"></a>
     </li>
     <li>
-      <a target="_blank" href="mailto:traffini@gmail.com"><img src="http://rottingroom.github.io/img/icons/email.png"></a>
+      <a href="#Contact"><img src="http://rottingroom.github.io/img/icons/email.png"></a>
     </li>
   </ul>
 </ul>
@@ -66,7 +65,7 @@
     
   <!-- bio -->
   <header>
-    <div id="heroimg">
+      <div id="heroimg">
   <img src="http://rottingroom.github.io/img/me.jpg" alt="My Pic">
 </div>
 
@@ -79,8 +78,8 @@
   
   <!-- rss blog -->
   <section>
-    <a id="Blogger">
-  <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ftraffini.blogspot.com%2Fatom.xml&num=8&date=y&tz=-8&targ=y&utf=y&html=a"  charset="UTF-8" type="text/javascript"></script>
+      <a id="Blogger">
+      <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ftraffini.blogspot.com%2Fatom.xml&num=8&date=y&tz=-8&targ=y&utf=y&html=a"  charset="UTF-8" type="text/javascript"></script>
 
 <noscript>
 <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ftraffini.blogspot.com%2Fatom.xml&num=8&date=y&tz=-8&targ=y&utf=y&html=y">View RSS feed</a>
@@ -95,8 +94,8 @@
   
   <!-- resume -->
   <article>
-    <a id="Experience">
-    <!-- Education -->
+      <a id="Experience">
+      <!-- Education -->
 
 <div>
   
@@ -240,8 +239,8 @@
   
   <!-- portfolio -->
   <aside>
-    <a id="Portfolio">
-    <div>
+      <a id="Portfolio">
+      <div>
   
   <h2>Portfolio</h2>  
   
@@ -413,11 +412,45 @@
   
   <!-- footer -->
   <footer>
-    <p>&copy; Anthony Raffini 2016</p>
+      <p>&copy; Anthony Raffini 2016</p>
   </footer>
+  
+  <!-- contact -->
+  <div class="lightbox" id="Contact">
+      <form action="//formspree.io/traffini@gmail.com" method="POST">
+     
+    <!-- Name -->
+    <label for="name">Who are you?</label>
+    <input type="text" name="name" placeholder="Joe Smith">
+    
+    <!-- Email   -->
+    <label for="_replyto">Email?</label>
+    <input type="email" name="_replyto" placeholder="joesmith@gmail.com">
 
+    <!-- Message -->
+    <label for="message">Your Message?</label>
+    <textarea name="message" id="" cols="30" rows="5" placeholder="Type here..."></textarea> 
+  
+    <!-- Hidden Field -->
+    <input type="text" name="_gotcha" style="display:none" />
+  
+    <!-- Next -->
+    <input type="hidden" name="_next" value="http://s.codepen.io/rottingroom/debug/yemKOj" />
+  
+    <div>
+    <!-- Submit Button -->
+    <input type="submit" value="Send me Spam!">
+    
+    <!-- Cancel Button -->
+    <a href="#_">Cancel</a>
+    </div>
+</form>
 
-</main>     <!-- End include from http://codepen.io/rottingroom/pen/dGJQzQ -->     <!-- End include from http://codepen.io/rottingroom/pen/ZQvmxX -->     <!-- End include from http://codepen.io/rottingroom/pen/adgwxZ -->     <!-- End include from http://codepen.io/rottingroom/pen/adEQRj -->     <!-- End include from http://codepen.io/rottingroom/pen/rxpQQd -->     <!-- End include from http://codepen.io/rottingroom/pen/QyaJVd -->
+  
+
+  </div>
+
+</main>     <!-- End include from http://codepen.io/rottingroom/pen/dGJQzQ -->     <!-- End include from http://codepen.io/rottingroom/pen/ZQvmxX -->     <!-- End include from http://codepen.io/rottingroom/pen/adgwxZ -->     <!-- End include from http://codepen.io/rottingroom/pen/adEQRj -->     <!-- End include from http://codepen.io/rottingroom/pen/rxpQQd -->     <!-- End include from http://codepen.io/rottingroom/pen/QyaJVd -->     <!-- End include from http://codepen.io/rottingroom/pen/dGxzGR -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
         <script src="js/index.js"></script>
