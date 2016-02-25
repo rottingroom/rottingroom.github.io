@@ -550,19 +550,20 @@ footer {
   }
 
   header img {
-    width: 96%;
+    width: 100%;
     border-radius: 8px 8px 0 0;
     margin: 50px 10px 0 10px;
+    position: relative;
+    left: -10px;
   }
   
   header p {
     border-radius: 0 0 8px 8px;
-    position: relative;
-    left: 10px;
+    
   }
 
   #aboutme {
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
     left: 0;
   }
