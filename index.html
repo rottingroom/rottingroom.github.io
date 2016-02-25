@@ -36,14 +36,14 @@
   <body>
 
     <!-- Included from http://codepen.io/rottingroom/pen/dGxzGR -->     <!-- Included from http://codepen.io/rottingroom/pen/QyaJVd -->     <!-- Included from http://codepen.io/rottingroom/pen/rxpQQd -->     <!-- Included from http://codepen.io/rottingroom/pen/adEQRj -->     <!-- Included from http://codepen.io/rottingroom/pen/adgwxZ -->     <!-- Included from http://codepen.io/rottingroom/pen/ZQvmxX -->     <!-- Included from http://codepen.io/rottingroom/pen/dGJQzQ -->     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
+<a id="Top">  
 <main>
   
   <!-- navbar -->
   <nav>
       <ul>
   <li id="name">Anthony Raffini</li>
-  <li><a href="#Blogger" class="smoothscroll">Blog</a></li>
+  <li><a href="#Top" class="smoothscroll">Blog</a></li>
   <li><a href="#Experience" class="smoothscroll">Experience</a></li>
   <li><a href="#Portfolio" class="smoothscroll">Portfolio</a></li>
   <ul id="navright">
@@ -59,7 +59,7 @@
   </ul>
 </ul>
 
-<img id="logo" src="http://rottingroom.github.io/img/logo.jpg">
+<a href="#Top" id="LogoClick" class="smoothscroll"><img id="logo" src="http://rottingroom.github.io/img/logo.jpg"></a>
   </nav>
 
     
@@ -78,7 +78,7 @@
   
   <!-- rss blog -->
   <section>
-      <a id="Blogger">
+      
       <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ftraffini.blogspot.com%2Fatom.xml&num=8&date=y&tz=-8&targ=y&utf=y&html=a"  charset="UTF-8" type="text/javascript"></script>
 
 <noscript>
@@ -89,16 +89,16 @@
 
 
   </section>
-  </a>
+  
 
   
   <!-- resume -->
   <article>
-      <a id="Experience">
+     
       <!-- Education -->
 
 <div>
-  
+  <a id="Experience">
   <h2>Education</h2>
 
   <h4>Eastern Washington University (2015-present)</h4>
@@ -234,13 +234,14 @@
 
 </div>
   </article>
-  </a>
+  
 
   
   <!-- portfolio -->
   <aside>
+      
       <a id="Portfolio">
-      <div>
+<div>
   
   <h2>Portfolio</h2>  
   
@@ -407,7 +408,7 @@
   </a> -->
 </div>
   </aside>
-  </a>
+  
 
   
   <!-- footer -->
@@ -416,38 +417,48 @@
   </footer>
   
   <!-- contact -->
-  <div class="lightboxform" id="Contact">
+  <<div class="contactform">
+  <div class="lightbox" id="Contact">
       <form action="//formspree.io/traffini@gmail.com" method="POST">
-     
-    <!-- Name -->
-    <label for="name">Who are you?</label>
-    <input type="text" name="name" placeholder="Joe Smith">
     
-    <!-- Email   -->
-    <label for="_replyto">Email?</label>
-    <input type="email" name="_replyto" placeholder="joesmith@gmail.com">
+    <div id="ContainerFormTopRow">
+      <!-- Name -->
+      <div id="ContainerFormName">
+        <label for="name">Who are you?</label>
+        <input type="text" name="name" placeholder="Joe Smith">
+      </div>
+
+      <!-- Email   -->
+      <div id="ContainerFormEmail">
+        <label for="_replyto">Email?</label>
+        <input type="email" name="_replyto" placeholder="joesmith@gmail.com">
+      </div>
+    </div>
 
     <!-- Message -->
-    <label for="message">Your Message?</label>
-    <textarea name="message" id="" cols="30" rows="5" placeholder="Type here..."></textarea> 
-  
+    <div id="ContainerFormMessage"> 
+      <label for="message">Your Message?</label>
+      <textarea name="message" id="" cols="30" rows="5" placeholder="Type here..."></textarea> 
+    </div>
+                                                                                  
     <!-- Hidden Field -->
     <input type="text" name="_gotcha" style="display:none" />
   
     <!-- Next -->
     <input type="hidden" name="_next" value="http://s.codepen.io/rottingroom/debug/yemKOj" />
   
-    <div>
-    <!-- Submit Button -->
-    <input type="submit" value="Send me Spam!">
+    <div id="ContainerFormButtons">
+      <!-- Submit Button -->
+      <input type="submit" value="Send me Spam!">
     
-    <!-- Cancel Button -->
-    <a href="#_">Cancel</a>
+      <!-- Cancel Button -->
+      <a href="#_">Cancel</a>
     </div>
 </form>
 
   
 
+  </div>
   </div>
 
 </main>     <!-- End include from http://codepen.io/rottingroom/pen/dGJQzQ -->     <!-- End include from http://codepen.io/rottingroom/pen/ZQvmxX -->     <!-- End include from http://codepen.io/rottingroom/pen/adgwxZ -->     <!-- End include from http://codepen.io/rottingroom/pen/adEQRj -->     <!-- End include from http://codepen.io/rottingroom/pen/rxpQQd -->     <!-- End include from http://codepen.io/rottingroom/pen/QyaJVd -->     <!-- End include from http://codepen.io/rottingroom/pen/dGxzGR -->

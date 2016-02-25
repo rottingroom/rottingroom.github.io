@@ -1,7 +1,7 @@
 var $root = $('html, body');
 $('a.smoothscroll').click(function() {
     $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 100
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 55
     }, 500);
     return false;
 });
