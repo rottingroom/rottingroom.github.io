@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-
 body {
   background: url(https://wallpaperscraft.com/image/laptop_room_on_the_desk_keyboard_mouse_apple_window_interior_73963_1920x1080.jpg);
   background-size: cover;
@@ -19,27 +18,31 @@ body {
 p {
   font-size: 1em;
 }
+
 h1 {
   font-size: 2em;
 }
+
 h2 {
   font-size: 1.75em;
   color: #A65B4B;
 }
+
 h3 {
   font-size: 1.5em;
 }
+
 h4 {
   font-weight: bold;
   margin-bottom: -10px;
 }
 
+
 /* Navigation */
 
 nav {
-  opacity: .9;
   background: black;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 nav a:link,
@@ -62,13 +65,13 @@ nav a:hover {
 
 #navright a:focus,
 #navright a:hover {
-  background: none;
+  background: white;
 }
 
 nav ul {
-  height: 60px;  
+  height: 60px;
   padding: 0;
-  margin: 0;   
+  margin: 0;
 }
 
 #navleft ul {
@@ -83,14 +86,14 @@ nav li {
   display: inline;
   color: #999;
   font-weight: 600;
-  list-style-type: none; 
+  list-style-type: none;
 }
 
-#navleft{
+#navleft {
   float: left;
 }
 
-#navleft li {  
+#navleft li {
   margin: 0 10px;
 }
 
@@ -99,31 +102,49 @@ nav li {
 }
 
 #navright li {
+  float: right;
+  height: 60px;
+  width: 60px;
   padding: 0;
-  margin: 0;
+}
+
+#navright a:link,
+#navright a:visited {
+  float: right;
+  display: block;
+  height: 30px;
+  width: 30px;
+  padding: 6px;
+  margin: 9px;
+  border-radius: 250px;
 }
 
 #navright img {
   float: right;
+  height: 30px;
   width: 30px;
-  margin: 0;
-  padding: 15px;
-}
-
-#logo {
-  width: 54px;
-  height: 54px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 10%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0;
 }
 
 #logolink {
-  padding: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
 }
+
+#logo {
+  width: 50px;
+  height: 50px;
+
+}
+
 
 
 /* Header */
@@ -153,8 +174,14 @@ header img {
 .rss-item a:link,
 .rss-item a:visited {
   color: #A65B4B;
-  font-size: 1.75em;  
+  font-size: 1.75em;
   font-weight: bold;
+}
+
+.rss-item a:focus,
+.rss-item a:hover {
+  background: #A65B4B;
+  color: white;
 }
 
 .rss-date {
@@ -170,11 +197,24 @@ aside .container {
   border-radius: 8px 8px 0 0;
 }
 
-#gallery img {
-  margin: 1%;
+aside a {
+  display: inline-block;
   width: 30.62%;
-  
+  padding: 1% 1% 0 1%;
+  border-radius: 4px;
 }
+
+aside a:focus,
+aside a:hover {
+  background: white;
+}
+
+#gallery img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* Resume */
 
@@ -186,11 +226,12 @@ article li {
 
 /* Footer */
 
-footer .container{
+footer .container {
   background: black;
   color: white;
   border-radius: 0 0 8px 8px;
 }
+
 
 /* Contact Form */
 
@@ -209,15 +250,15 @@ input,
 textarea {
   display: block;
   text-align: left;
-  width: 60%;
+  width: 200px;
   margin: 10px 0;
-  color: #999; 
+  color: #999;
   border: none;
 }
 
 textarea {
-   width: 90%;
-   height: 100px;
+  width: 98%;
+  height: 100px;
 }
 
 input[type="text"],
@@ -252,7 +293,6 @@ form a {
   float: left;
 }
 
-
 :focus,
 input:focus,
 textarea:focus,
@@ -266,37 +306,37 @@ form a:focus {
 /* Lightbox */
 
 .lightbox {
-   position: fixed;
-   z-index: 9999;
-   width: 100%;
-   height: 0%;
-   text-align: center;
-   top: -2000px;
-   left: 0;
-   background: rgba(0,0,0,0);
-   transition: top .1s;
-   transition: height .1s;
-   transition: background .4s;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 0%;
+  text-align: center;
+  top: -2000px;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: top .1s;
+  transition: height .1s;
+  transition: background .4s;
 }
 
 .lightbox figure {
   width: 96%;
   height: 90%;
-  margin: 2% 2%;  
+  margin: 2% 2%;
 }
 
-.lightbox figure img{
-   max-width: 96%;
-   max-height: 96%;
-   margin: 2%;
-   box-shadow: 0 18px 20px rgba(0, 0, 0, 0.9);
+.lightbox figure img {
+  max-width: 96%;
+  max-height: 96%;
+  margin: 2%;
+  box-shadow: 0 18px 20px rgba(0, 0, 0, 0.9);
 }
 
 .lightbox:target {
-   outline: none;
-   top: 0;
-   height: 100%;
-   background: rgba(0,0,0,0.8);
+  outline: none;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* Layout */
@@ -351,27 +391,27 @@ footer {
   padding: 5px 30px;
   background: white;
   border-radius: 8px;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   color: black;
 }
 
 /* Tablet */
 
 @media screen and (max-width: 1120px) {
-   
+  
   main {
     width: 600px;
   }
-   
+  
   nav #name {
     display: none;
   }
   
-  #logo {
+  #logolink {
     position: absolute;
     left: 0;
     right: 0;
-    top: 10%;
+    top: 0;
     margin-left: auto;
     margin-right: 0;
   }
@@ -381,23 +421,20 @@ footer {
     width: 30px;
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 60px;
   }
   
-  #navright img {
-    padding: 10px;
-  }
-   
+  
   header {
     width: 100%;
   }
-
+  
   header img {
-    width: 110px;  
+    width: 110px;
     margin: 25px -10px 0 20px;
     border-radius: 250px;
-  } 
-   
+  }
+  
   section,
   article,
   aside,
@@ -407,37 +444,44 @@ footer {
   
   #formcontainer {
     width: 65%;
-    margin: 0 auto;
   }
-    
+  
+}
+
+@media screen and (max-width: 700px) {
+
+  main {
+    width: 85%;
+  }
+  
 }
 
 /* Mobile */
 
-@media screen and (max-width: 700px) {
-   
+@media screen and (max-width: 500px) {
+  
   main {
-     width: 98%;
+    width: 98%;
   }
-   
+  
   header {
     position: relative;
     top: 10px;
   }
-   
+  
   header .container {
     width: auto;
     margin: 0 10px 20px 10px;
     padding: 0;
   }
-   
+  
   header img {
     width: 100%;
     margin: 0;
     border-radius: 8px 8px 0 0;
     position: static;
   }
-   
+  
   header p {
     position: relative;
     top: 10px;
@@ -447,6 +491,7 @@ footer {
   
   #formcontainer {
     width: 98%;
+    margin: 0 auto;
   }
-
+  
 }
