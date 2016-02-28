@@ -173,6 +173,7 @@ aside .container {
 #gallery img {
   margin: 1%;
   width: 30.62%;
+  
 }
 
 /* Resume */
@@ -259,7 +260,7 @@ form a:focus {
   background: #F6E9E7;
   transition: background .5s;
   outline: #F6E9E7;
-  color: #fff;
+  color: #000;
 }
 
 /* Lightbox */
@@ -369,7 +370,7 @@ footer {
   #logo {
     position: absolute;
     left: 0;
-    right: 5px;
+    right: 0;
     top: 10%;
     margin-left: auto;
     margin-right: 0;
@@ -379,8 +380,12 @@ footer {
     display: block;
     width: 30px;
     position: absolute;
-    right: 5px;
+    right: 0;
     top: 10px;
+  }
+  
+  #navright img {
+    padding: 10px;
   }
    
   header {
@@ -398,6 +403,11 @@ footer {
   aside,
   footer {
     width: 100%;
+  }
+  
+  #formcontainer {
+    width: 65%;
+    margin: 0 auto;
   }
     
 }
@@ -437,13 +447,6 @@ footer {
   
   #formcontainer {
     width: 98%;
-    margin: 0 auto;
   }
-  
-  
 
 }
-   
-
-
-
