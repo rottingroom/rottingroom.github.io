@@ -494,7 +494,16 @@ footer {
   
   #formcontainer {
     width: 98%;
-    margin: 0 auto;
   }
   
+}
+
+@media screen and (max-height: 551px) {
+
+	/* Make form scrollable if form is taller than screen */
+	#Contact:target {
+		position: absolute; 
+		height: 550px;
+	}
+
 }
