@@ -68,18 +68,26 @@ nav a:hover {
   background: white;
 }
 
-nav ul {
-  height: 60px;
-  padding: 0;
-  margin: 0;
-}
-
 #navleft ul {
   width: 70%;
 }
 
 #navright ul {
   width: 30%;
+}
+
+#navleft {
+  float: left;
+}
+
+#navright {
+  float: right;
+}
+
+nav ul {
+  height: 60px;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
@@ -89,16 +97,8 @@ nav li {
   list-style-type: none;
 }
 
-#navleft {
-  float: left;
-}
-
 #navleft li {
   margin: 0 10px;
-}
-
-#navright {
-  float: right;
 }
 
 #navright li {
@@ -246,20 +246,25 @@ input,
 textarea {
   display: block;
   text-align: left;
-  width: 200px;
+  width: 98%;
   margin: 10px 0;
+	padding: 1%;
   color: #999;
   border: none;
 }
 
+label {
+	padding: 0;
+}
+
 textarea {
-  width: 98%;
   height: 100px;
 }
 
 input[type="text"],
 input[type="email"] {
-  padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
   border: none;
 }
 
@@ -304,17 +309,17 @@ form a:focus {
 
 .lightbox {
   position: fixed;
+	top: -2000px;
+	left: 0;
   z-index: 9999;
+	height: 0%;
   width: 100%;
-  height: 0%;
   text-align: center;
-  top: -2000px;
-  left: 0;
   background: rgba(0, 0, 0, 0);
-  -webkit-transition: top .1s;
-  transition: top .1s;
-  -webkit-transition: height .1s;
-  transition: height .1s;
+	-webkit-transition: top .1s;
+	transition: top .1s;
+	-webkit-transition: height .2s;
+	transition: height .2s;
   -webkit-transition: background .3s;
   transition: background .3s;
 }
@@ -334,8 +339,8 @@ form a:focus {
 
 .lightbox:target {
   outline: none;
-  top: 0;
-  height: 100%;
+	top: 0;
+	height: 100%;
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -493,14 +498,15 @@ footer {
   }
   
   #formcontainer {
-    width: 98%;
+    width: 90%;
   }
   
 }
 
-@media screen and (max-height: 551px) {
+/* Make form scrollable if form is taller than screen */
 
-	/* Make form scrollable if form is taller than screen */
+@media screen and (max-height: 551px) {
+	
 	#Contact:target {
 		position: absolute; 
 		height: 550px;
