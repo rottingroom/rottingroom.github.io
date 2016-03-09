@@ -363,6 +363,10 @@ form a:focus {
 	color: white;
 }
 
+a.lightbox {
+	text-decoration: none;
+}
+
 .lightbox:target {
 	visibility: visible;
   outline: none;
