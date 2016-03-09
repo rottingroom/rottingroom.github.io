@@ -399,9 +399,12 @@ aside {
 
 footer {
   width: 400px;
-  float: left;
-  position: relative;
-  top: -20px;
+  
+}
+
+footer .container {
+	position: relative;
+	top: 50px;
 }
 
 /* Container */
