@@ -222,6 +222,19 @@ article li {
   left: -40px;
 }
 
+article p {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+article button {
+	width: 110px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+}
+
 /* Footer */
 
 footer .container {
@@ -270,7 +283,8 @@ input[type="email"] {
   border: none;
 }
 
-input[type="submit"] {
+input[type="submit"],
+button {
   text-align: center;
   display: inline;
   padding: 10px;
@@ -305,6 +319,11 @@ form a:focus {
   transition: background .5s;
   outline: #F6E9E7;
   color: #000;
+}
+
+.lightbox:target form {
+	-webkit-animation: fadein 1s;
+	        animation: fadein 1s;
 }
 
 /* Lightbox */
@@ -427,6 +446,8 @@ footer .container {
 	        animation-duration: 1s;
 }
 
+/* Animations */
+
 @-webkit-keyframes slideDown {
 	0% {
 		-webkit-transform: translateY(-400px);
@@ -459,6 +480,11 @@ footer .container {
 		        transform: scale(1);
 		opacity: 1;
 	}
+}
+
+@keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 /* Tablet */
