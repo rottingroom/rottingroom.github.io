@@ -144,14 +144,24 @@ nav li {
   height: 50px;
 }
 
+.spacer {
+	width: 100%;
+	height: 60px;
+/* 	margin-bottom: 10px; */
+}
+
 /* Header */
 
 header img {
+	-webkit-transition: all .8s;
+	transition: all .8s;
+	margin-bottom: 5px;
+	z-index: 501;
   position: relative;
   top: -5px;
   left: -30px;
-  width: 380px;
-  border-radius: 8px 8px 0 0;
+  width: 380px; 
+  border-radius: 3px 3px 0 0;
   float: left;
 }
 
@@ -174,12 +184,15 @@ header img {
   color: #A65B4B;
   font-size: 1.5em;
   font-weight: bold;
+	border-radius: 2px;
 }
 
 .rss-item a:focus,
 .rss-item a:hover {
   background: #A65B4B;
   color: white;
+	-webkit-transition: background .5s;
+	transition: background .5s;
 }
 
 .rss-date {
@@ -188,11 +201,15 @@ header img {
   font-size: 10pt;
 }
 
+section a img {
+	padding: 5px 5px 2px 5px;
+}
+
 /* Portfolio */
 
 aside .container {
   background: black;
-  border-radius: 8px 8px 0 0;
+  border-radius: 3px 3px 0 0;
 	padding-left: 6%;
 	padding-right: 4%;
 }
@@ -207,9 +224,13 @@ aside a {
 aside a:focus,
 aside a:hover {
   background: white;
+	-webkit-transition: background .5s;
+	transition: background .5s;
 }
 
 #gallery img {
+	-webkit-transition: all .4s;
+	transition: all .4s;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -232,9 +253,9 @@ article button {
 	font-size: 13px;
 	height: 35px;
 	line-height: 10px;
-	width: 100px;
+	width: 90px;
 	position: absolute;
-	top: 12px;
+	top: 10px;
 	right: 10px;
 
 }
@@ -244,7 +265,7 @@ article button {
 footer .container {
   background: black;
   color: white;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 3px 3px;
 }
 
 
@@ -378,16 +399,6 @@ a.lightbox {
           animation: fadein 1s;
 }
 
-@-webkit-keyframes fadein {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-@keyframes fadein {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
-
 /* Layout */
 
 nav {
@@ -401,49 +412,69 @@ nav {
 }
 
 main {
-  width: 1100px;
+	-webkit-transition: width .8s;
+	transition: width .8s;
+	position: relative;
+  width: 1084px;
   margin: 0 auto;
 }
 
 header {
   width: 400px;
-  float: left;
+}
+
+.moveright {
+	z-index: 500;
+	position: absolute;
+	top: 60px;
+	right: 0;
 }
 
 section {
-  width: 680px;
-  float: right;
+  width: 680px; 
+	position: relative;
+	right: 0;
 }
 
 article {
+	position: relative;
   width: 680px;
-  float: right;
+  
+}
+
+article .container {
+	position: relative;
+	top: 10px;
 }
 
 aside {
   width: 400px;
 }
 
+aside .container {
+	position: relative;
+	top: -12.5px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 footer {
-  width: 400px;
-  
+	display: inline-block;
+  width: 400px; 
 }
 
 footer .container {
-	position: relative;
-	top: 50px;
+	margin-top: -12.5px;
 }
 
 /* Container */
 
 .container {
-  position: relative;
-  top: 60px;
   width: auto;
   margin: 10px;
   padding: 5px 30px;
   background: white;
-  border-radius: 8px;
+  border-radius: 3px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   color: gray;
 	-webkit-animation: slideDown backwards;
@@ -490,6 +521,11 @@ footer .container {
 	}
 }
 
+@-webkit-keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
 @keyframes fadein {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
@@ -500,7 +536,9 @@ footer .container {
 @media screen and (max-width: 1120px) {
   
   main {
-    width: 600px;
+		-webkit-transition: all .5s;
+		transition: all .5s;	
+    width: 600px
   }
   
   nav #name {
@@ -523,21 +561,30 @@ footer .container {
     right: 0;
     top: 60px;
   }
-  
-  header {
-    width: 100%;
-  }
+	
+	.moveright {
+		position: static;
+	}
+	
+	header,
+	article {
+		margin-bottom: 20px;
+	}
   
   header img {
+		-webkit-transition: all .7s;
+		transition: all .7s;
     width: 110px;
     margin: 25px -10px 0 20px;
     border-radius: 250px;
   }
   
+	header,
   section,
   article,
   aside,
   footer {
+		display: block;
     width: 100%;
   }
   
@@ -552,6 +599,8 @@ footer .container {
 @media screen and (max-width: 700px) {
 
   main {
+		-webkit-transition: all 1s;
+		transition: all 1s;
     width: 85%;
   }
   
@@ -579,7 +628,7 @@ footer .container {
   header img {
     width: 100%;
     margin: 0;
-    border-radius: 8px 8px 0 0;
+    border-radius: 3px 3px 0 0;
     position: static;
   }
   
@@ -593,6 +642,22 @@ footer .container {
   #formcontainer {
     width: 90%;
   }
+	
+	section a img {
+		position: relative;
+		left: -5px;
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
+	
+	section a {
+		-webkit-transition: all .5s;
+		transition: all .5s;
+		width: 100%;
+	  margin: 0;
+		float: left;
+	}
   
 }
 
