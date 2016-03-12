@@ -73,7 +73,36 @@ nav a:hover {
 }
 
 #navright ul {
-  width: 30%;
+  width: 30%;	
+}
+
+ul#navleft {
+	-webkit-animation: slideRight .5s;
+	        animation: slideRight .5s;
+}
+ul#navright {
+	-webkit-animation: slideLeft .5s;
+	        animation: slideLeft .5s;
+}
+
+@-webkit-keyframes slideLeft {
+	from { -webkit-transform: translateX(200px); transform: translateX(200px) }
+	to {  }
+}
+
+@keyframes slideLeft {
+	from { -webkit-transform: translateX(200px); transform: translateX(200px) }
+	to {  }
+}
+
+@-webkit-keyframes slideRight {
+	from { -webkit-transform: translateX(-200px); transform: translateX(-200px) }
+	to {  }
+}
+
+@keyframes slideRight {
+	from { -webkit-transform: translateX(-200px); transform: translateX(-200px) }
+	to {  }
 }
 
 #navleft {
@@ -564,6 +593,36 @@ footer .container {
     right: 0;
     top: 60px;
   }
+	
+	ul#navright {
+		-webkit-animation: slideLeft2 .5s;
+		        animation: slideLeft2 .5s;
+	}
+	
+	ul#navleft {
+		-webkit-animation: slideLeft3 .5s;
+		        animation: slideLeft3 .5s;
+	}
+	
+	@-webkit-keyframes slideLeft2 {
+		from { -webkit-transform: translateX(200px); transform: translateX(200px) }
+		to {  }
+	}
+	
+	@keyframes slideLeft2 {
+		from { -webkit-transform: translateX(200px); transform: translateX(200px) }
+		to {  }
+	}
+
+	@-webkit-keyframes slideLeft3 {
+		from { -webkit-transform: translateX(100px); transform: translateX(100px) }
+		to {  }
+	}
+
+	@keyframes slideLeft3 {
+		from { -webkit-transform: translateX(100px); transform: translateX(100px) }
+		to {  }
+	}
 	
 	.moveright {
 		position: static;
