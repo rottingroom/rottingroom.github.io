@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 body {
   background: url(https://wallpaperscraft.com/image/laptop_room_on_the_desk_keyboard_mouse_apple_window_interior_73963_1920x1080.jpg);
-  background-size: 110% 110%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed
 }
@@ -553,15 +553,18 @@ footer .container {
 	}
 }
 
-@-webkit-keyframes fadein {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-@keyframes fadein {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
+/* @keyframes fadein {
+	0% {
+		transform: translateY(-400px);
+		transform: scale(1.1);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		transform: scale(1);
+		opacity: 1;
+	}
+} */
 
 /* Tablet */
 
@@ -662,7 +665,7 @@ footer .container {
   #formcontainer {
     width: 65%;
   }
-  
+	
 }
 
 /* Phablet */
