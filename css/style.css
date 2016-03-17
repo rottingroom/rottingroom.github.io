@@ -282,7 +282,7 @@ article p {
 article button {
 	font-size: 13px;
 	height: 35px;
-	line-height: 10px;
+	line-height: 15px;
 	width: 90px;
 	position: absolute;
 	top: 10px;
@@ -552,19 +552,6 @@ footer .container {
 		opacity: 1;
 	}
 }
-
-/* @keyframes fadein {
-	0% {
-		transform: translateY(-400px);
-		transform: scale(1.1);
-		opacity: 0;
-	}
-	100% {
-		transform: translateY(0px);
-		transform: scale(1);
-		opacity: 1;
-	}
-} */
 
 /* Tablet */
 
