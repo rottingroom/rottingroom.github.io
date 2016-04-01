@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #A65B4B;
 }
 
@@ -210,18 +210,21 @@ header img {
 }
 
 .rss-item figure {
-	position: relative;
-	float: right;
+	position: static;
+	float: none;
+	width: 100%;
 }
 
 .rss-item figure img {
-	margin-right: -35px;
+	position: relative;
+	right: 40px;
+	width: 100%;
 }
 
 .rss-item a:link,
 .rss-item a:visited {
   color: #A65B4B;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
 	border-radius: 2px;
 }
@@ -681,7 +684,7 @@ footer .container {
     width: 65%;
   }
 	
-	.rss-item figure {
+/* 	.rss-item figure {
 		margin-left: 0;
 		float: none!important;
 		width: 100%;
@@ -689,7 +692,7 @@ footer .container {
 	
 	.rss-item figure img {
 		width: 100%;
-	}
+	} */
 	
 }
 
