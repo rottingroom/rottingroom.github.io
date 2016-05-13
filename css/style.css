@@ -196,11 +196,15 @@ header img {
 
 /* Blog */
 
+hr {
+    opacity: .3;
+}
+
 .rss-items {
   color: gray;
   background: white;
   padding: 0;
-	font-size: 1em;
+  font-size: 1em;
 }
 
 .rss-item {
@@ -229,12 +233,25 @@ iframe {
 	left: -40px;
 }
 
+
 .rss-item a:link,
 .rss-item a:visited {
   color: #A65B4B;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.4em;
+  font-weight: normal;
 	border-radius: 2px;
+    text-decoration: none;
+}
+
+.rss-items p a:link,
+.rss-items p a:visited,
+.rss-item p a:link,
+.rss-item p a:visited {
+  color: #A65B4B;
+  font-size: 1em;
+  font-weight: normal;
+	border-radius: 2px;
+    text-decoration: none;
 }
 
 .rss-item a:focus,
@@ -287,6 +304,10 @@ aside a:hover {
 }
 
 /* Resume */
+
+article {
+    display: none;
+}
 
 article li {
   list-style-type: none;
