@@ -259,7 +259,11 @@ iframe {
 }
 
 .rss-item a:focus,
-.rss-item a:hover {
+.rss-item a:hover,
+.rss-items p a:focus,
+.rss-items p a:hover,
+.rss-item p a:focus,
+.rss-item p a:hover {
   background: #A65B4B;
   color: white;
 	-webkit-transition: background .5s;
