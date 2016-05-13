@@ -9,7 +9,7 @@ $('a.smoothscroll').click(function() {
 $('.rss-item').readmore({
     
     collapsedHeight: 500,
-    moreLink: '<a href="#"><p>Read more...</a><hr><p>',
-    lessLink: '<a href="#"><p>Collapse Story...</a><hr><p>'
+    moreLink: '<a href="#"><p>Read more...</a><p>',
+    lessLink: '<a href="#"><p>Collapse Story...</a><p>'
     
 });
