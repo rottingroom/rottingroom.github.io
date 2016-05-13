@@ -181,6 +181,10 @@ nav li {
 
 /* Header */
 
+header {
+    display: none;
+}
+
 header img {
 	-webkit-transition: all .8s;
 	transition: all .8s;
