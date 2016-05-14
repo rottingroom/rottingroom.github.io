@@ -415,6 +415,7 @@ form a {
     float: left;
 }
 
+
 :focus,
 input:focus,
 textarea:focus,
@@ -631,9 +632,11 @@ footer .container {
         width: 600px
     }
 
+/*
     nav #name {
         display: none;
     }
+*/
 
     #logolink {
         position: absolute;
@@ -720,16 +723,6 @@ footer .container {
     #formcontainer {
         width: 65%;
     }
-
-    /* 	.rss-item figure {
-    margin-left: 0;
-    float: none!important;
-    width: 100%;
-}
-
-    .rss-item figure img {
-    width: 100%;
-} */
 
 }
 

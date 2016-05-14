@@ -7,9 +7,9 @@ $('a.smoothscroll').click(function() {
 });
 
 $('.rss-item').readmore({
-    
+
     collapsedHeight: 500,
     moreLink: '<a href="#"><p>Read more...</a><p>',
     lessLink: '<a href="#"><p>Collapse Story...</a><p>'
-    
+
 });
